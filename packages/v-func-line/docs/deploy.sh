@@ -10,7 +10,7 @@ git init
 git add -A
 git commit -m 'deploy'
 
-git push -f git@github.com:novlan1/v-func-line.git master:gh-pages
+git push -f git@github.com:novlan1/magic-tools.git master:gh-pages
 
 cd -
 
