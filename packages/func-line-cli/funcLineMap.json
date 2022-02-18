@@ -1,0 +1,9 @@
+{
+  "src-getContent": "./src/index.js#L5",
+  "src-getParentDirName": "./src/index.js#L22",
+  "src-getFileName": "./src/index.js#L28",
+  "src-readContentFromMd": "./src/index.js#L37",
+  "src-test": "./src/index.js#L48",
+  "src-getAnnotation": "./src/index.js#L67",
+  "src-saveFuncLineMap": "./src/index.js#L103"
+}

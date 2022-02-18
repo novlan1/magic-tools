@@ -1,0 +1,17 @@
+{
+  "name": "func-line-cli",
+  "version": "0.0.2",
+  "description": "获取函数所在行号的命令行工具",
+  "main": "index.js",
+  "bin": {
+    "func-line": "bin/index.js",
+    "func-line-cli": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "func:line": "bin/index.js ./src"
+  },
+  "author": "mike",
+  "license": "ISC",
+  "dependencies": {}
+}

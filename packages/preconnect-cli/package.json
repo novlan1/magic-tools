@@ -1,0 +1,25 @@
+{
+  "name": "preconnect-cli",
+  "version": "0.0.3",
+  "description": "生成DNS预解析、预连接HTML的脚手架工具",
+  "main": "bin/index.js",
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "preconnect-cli": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "preconnect",
+    "dns-prefetch"
+  ],
+  "author": "mike",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0"
+  }
+}

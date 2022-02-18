@@ -1,0 +1,25 @@
+{
+  "name": "v-func-line",
+  "version": "0.0.5",
+  "description": "为Vuepress文档增加源代码链接的插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "func:line": "func-line ./src",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "sh docs/deploy.sh"
+  },
+  "keywords": [
+    "vuepress",
+    "vue",
+    "plugin",
+    "func-line"
+  ],
+  "author": "mike",
+  "license": "ISC",
+  "devDependencies": {
+    "func-line-cli": "0.0.1",
+    "vuepress": "^1.8.0"
+  }
+}

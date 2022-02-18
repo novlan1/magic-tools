@@ -1,0 +1,9 @@
+{
+  "src-install": "./src/index.js#L5",
+  "src-addEmptyLinkEle": "./src/index.js#L35",
+  "src-getFileName": "./src/index.js#L75",
+  "src-getPureFuncName": "./src/index.js#L82",
+  "src-addSourceLink": "./src/index.js#L87",
+  "src-getHref": "./src/index.js#L106",
+  "src-pathResolve": "./src/index.js#L117"
+}
