@@ -1,0 +1,19 @@
+{
+  "name": "read-file-env",
+  "version": "0.0.2",
+  "description": "读取环境变量",
+  "main": "./dist/bundle.js",
+  "files": [
+    "./dist/bundle.js"
+  ],
+  "scripts": {
+    "test": "node test/test.js",
+    "build": "rollup --config"
+  },
+  "author": "novlan1",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.68.0",
+    "rollup-plugin-babel": "^4.4.0"
+  }
+}
