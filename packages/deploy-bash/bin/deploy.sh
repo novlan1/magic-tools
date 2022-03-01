@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eux
 
-isBack=
+isBack=0
 project=
 hostName=
 hostPwd=
@@ -74,7 +74,7 @@ function uploadFile() {
 # 参数依次为 isBackEndProject、targetDir
 function main() {
   set +u
-  isBack=$1
+  isBack=${1-$isBack}
   targetDir=$2
   set -u
   
