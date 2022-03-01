@@ -22,7 +22,7 @@ function getMPackName() {
   mPackName=$project
   if [[ "$isBack" == 1 && "$project" != *backend && "$project" != *svr ]];then
     mPackName=${project}-backend
-  elif [[ "$isBack" == 0 && "$project" != *frontend ]];then
+  elif [[ "$isBack" == 0 && "$project" != *frontend && "$project" != *web ]];then
     mPackName=${project}-frontend
   fi;
 
