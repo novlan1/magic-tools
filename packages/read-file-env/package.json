@@ -1,10 +1,19 @@
 {
   "name": "read-file-env",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "读取环境变量",
   "main": "./dist/bundle.js",
+  "homepage": "https://github.com/novlan1/magic-tools",
   "files": [
     "dist/bundle.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/novlan1/magic-tools"
+  },
+  "keywords": [
+    "env",
+    "read-env"
   ],
   "scripts": {
     "test": "node test/test.js",
