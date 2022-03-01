@@ -10,9 +10,9 @@ VUE_APP_DIR=project/match
 开始使用：
 
 ```js
-const { readFileEnv } = require('read-file-env');
+const { readEnv } = require('read-file-env');
 
-const appDir = readFileEnv('VUE_APP_DIR', '.env.local');
+const appDir = readEnv('VUE_APP_DIR', '.env.local');
 
 console.log(appDir); // project/match
 ```
