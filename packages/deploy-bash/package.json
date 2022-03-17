@@ -21,8 +21,13 @@
     "cli"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo test",
+    "build": "echo build",
+    "release": "yarn test && yarn build && np --no-cleanup --yolo --any-branch"
   },
   "author": "novlan1",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "np": "^7.6.0"
+  }
 }
