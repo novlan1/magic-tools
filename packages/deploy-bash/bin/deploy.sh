@@ -85,7 +85,6 @@ function uploadFile() {
 function main() {
   set +u
   isBack=${1-$isBack}
-  DEPLOY_TARGET_DIR=$2
   set -u
   
   getDeployVars
