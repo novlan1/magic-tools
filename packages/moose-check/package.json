@@ -1,12 +1,12 @@
 {
   "name": "morse-password",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "morse passwd for web app",
   "main": "dist/index.js",
   "types": "dist/types",
   "scripts": {
     "build": "node ./scripts/build.js",
-    "publish": "npm run build; npm publish;",
+    "pub": "npm run build; npm publish;",
     "release": "standard-version"
   },
   "keywords": [
@@ -16,9 +16,9 @@
     "passcode",
     "web"
   ],
-  "author": "novlan1",
+  "author": "mike",
   "license": "ISC",
-  "repository": "https://github.com/novlan1/magic-tools",
+  "repository": "",
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.3.3",
     "rollup-plugin-dts": "^4.2.2",
