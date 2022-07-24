@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Passwd</title>
+</head>
+
+<body>
+    <h3>Morse Passwd</h3>
+    <p>
+        The passwd is ".._.._", the dot represents click and dash represents long press more than 1s.
+    </p>
+    <p>
+        So click the green button below to complete the passwd.
+    </p>
+    <div>
+        <button id="target"
+            style="background-color: rgb(0, 156, 162); color: #fff; border: 2px solid rgb(0, 156, 162);">press
+            me</button>
+        <button id="reset">reset</button>
+    </div>
+    <div>current input: <span id="display"></span></div>
+    <div id="result"></div>
+</body>
+<script src="../dist/index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    let moresePass;
+    function init() {
+        document.getElementById('display').innerText = ''
+        document.getElementById('result').innerText = ''
+        if (moresePass) {
+            moresePass.destroy()
+        }
+        moresePass = new MorsePass({
+            // the target element which will bind event
+            target: document.querySelector('#target'),
+            // the passwd. '.' represents one click, '_' represents one press
+            passwd: '.._.._',
+            // how long time press should be counted. the unit is ms
+            pressLeastTime: 1000,
+            // how long time will the current operation expired, then you should do it again from the first code. the unit is ms
+            expires: 1000 * 5,
+            // trigger when the passwd is right.
+            success() {
+                document.getElementById('result').innerText = 'Passwd Right!'
+            },
+            // trigger when input wrong code
+            fail() {
+                document.getElementById('result').innerText = 'Passwd Wrong!'
+            },
+            // trigger on each input
+            input(text) {
+                console.log('====', text)
+                document.getElementById('display').innerText = text
+            },
+            // trigger when the time is expired after the last operation
+            expire() {
+                document.getElementById('result').innerText = 'The operation is expired, please do it again.'
+            }
+        })
+    }
+
+    init()
+
+    document.querySelector('#reset').onclick = () => {
+        init()
+    }
+
+</script>
+
+</html>
